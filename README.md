@@ -14,11 +14,17 @@ orange: 139
 grape: 139
 ```
 
-Example of providing too many or no files
+Example of providing too many or no files:
 ```
 $ java -jar --enable-preview countWords.jar 
 No file provided or too many files provided
 ------------------------------------------
 $ java -jar --enable-preview countWords.jar words.txt words.txt 
 No file provided or too many files provided
+```
+
+Example of providing an unsupported format:
+```
+$ java -jar --enable-preview countWords.jar words.jap
+The file must be a .txt file
 ```
