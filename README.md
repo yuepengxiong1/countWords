@@ -1,18 +1,15 @@
-## Getting Started
+This program passes in a text file and counts the number of times the word is encountered
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+How to run the program:
+```
+java -jar --enable-preview countWords.jar words.txt
+```
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Example of output:
+```
+$ java -jar --enable-preview countWords.jar words.txt
+apple: 210
+banana: 139
+orange: 139
+grape: 139
+```
