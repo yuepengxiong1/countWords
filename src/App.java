@@ -27,6 +27,7 @@ public class App {
                 //this while loop reads from line to line until null
                 while ((line = reader.readLine()) != null) {
                     String word = line.trim(); //trim whitespace from end to end. stores what word is on that line to word variable
+                    word = word.toLowerCase(); //so that case does not matter
 
                     //if word is NOT empty, do...
                     if (!word.isEmpty()) {
